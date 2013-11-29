@@ -7,4 +7,22 @@ body {
 
 .slide {
 	font-size: 2em;
+	position: absolute;
+	opacity: 0.5;
+}
+
+#slide1 {
+	background-color: red;
+}
+
+#slide2 {
+	background-color: blue;
+}
+
+#slide3 {
+	background-color: green;
+}
+
+#slide4{
+	background-color: yellow;
 }
