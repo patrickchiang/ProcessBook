@@ -1,0 +1,10 @@
+/* reset CSS file to reset browser default styling to a consistent starting point */
+@import url(reset.css);
+
+body {
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+.slide {
+	font-size: 2em;
+}
