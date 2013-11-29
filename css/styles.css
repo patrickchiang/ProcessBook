@@ -5,6 +5,15 @@ body {
 	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 }
 
+.navbar {
+	position: absolute;
+	width: 1000px;
+	height: 100px;
+	top: 10px;
+	background-color: white;
+	left: 100px;
+}
+
 .slide {
 	font-size: 2em;
 	position: absolute;
