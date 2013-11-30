@@ -14,10 +14,14 @@ body {
 	left: 100px;
 }
 
-.slide {
+.slide, .object {
 	font-size: 2em;
 	position: absolute;
-	opacity: 0.5;
+	z-index: 1;
+}
+
+.object {
+	z-index: 2;
 }
 
 #slide1 {
@@ -32,6 +36,13 @@ body {
 	background-color: green;
 }
 
-#slide4{
+#slide4 {
 	background-color: yellow;
+}
+
+#picture {
+	left: 200px;
+	width: 100px;
+	height: 100px;
+	background-color: black;
 }
