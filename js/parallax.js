@@ -2,7 +2,7 @@ var viewHeight = $(window).height();
 var viewWidth = $(window).width();
 
 $(function() {
-	
+
 	$(".slide").height(viewHeight).width(viewWidth);
 	init();
 
@@ -14,17 +14,8 @@ $(function() {
 
 function gotoSection(e) {
 	e.preventDefault();
-
-	var slide = $($(this).attr("href"));
-
-	var move = slide.position().top - $(window).scrollTop();
-	var lastMove = move;
-	for (var i = 0; i < 100; i++) {
-		lastMove = parseFloat(slide.data("speed")) * lastMove;
-		move -= lastMove;
-	}
-	console.log(move);
-	window.scroll(0, move);
+	
+	window.scroll(0, 2025);
 }
 
 function init() {
@@ -62,12 +53,11 @@ function moveUp() {
 	for (var i = 0; i < slides.length; i++) {
 		// Variable
 		var slide = $(slides[i]);
-		var speed = parseFloat(slide.data("speed"));
 		var transparencyMax = slide.data("transparency") ? parseFloat(slide.data("transparency")) : 0.5;
-		var fadeMaxStart = parseInt(slide.data("fade-out-start"));
-		var fadeMaxEnd = parseInt(slide.data("fade-out-end"));
-		var fadeMinStart = parseInt(slide.data("fade-in-start"));
-		var fadeMinEnd = parseInt(slide.data("fade-in-end"));
+		var fadeMaxStart = parseInt(slide.data("fade-out-start")) ? parseInt(slide.data("fade-out-start")) : 0;
+		var fadeMaxEnd = parseInt(slide.data("fade-out-end")) ? parseInt(slide.data("fade-out-end")) : 0;
+		var fadeMinStart = parseInt(slide.data("fade-in-start")) ? parseInt(slide.data("fade-in-start")) : 0;
+		var fadeMinEnd = parseInt(slide.data("fade-in-end")) ? parseInt(slide.data("fade-in-end")) : 0;
 
 		// Fading out
 		var slideBottom = slide.position().top + viewHeight;
