@@ -1,37 +1,36 @@
 var viewHeight = $(window).height();
 var viewWidth = $(window).width();
-var currentScroll = 0;
-
-var scrollSpeeds = [0, 0.2, 0.2, 0.2];
-
-var fadeMaxStart = [-300, -500, 0, 0];
-var fadeMaxEnd = [-150, 0, 0, 0];
-
-var fadeMinStart = [0, 0, 0, 0];
-var fadeMinEnd = [0, 400, 0, 0];
-
-var transparencyMax = [1, 0.5, 0.5, 0.5];
 
 $(function() {
+	
 	$(".slide").height(viewHeight).width(viewWidth);
 	init();
 
 	$(window).scroll(moveUp);
 	$(".navbar a").click(gotoSection);
+
+	$.stellar();
 });
 
-function gotoSection() {
-	$(window).scroll();
+function gotoSection(e) {
+	e.preventDefault();
+
+	var slide = $($(this).attr("href"));
+
+	var move = slide.position().top - $(window).scrollTop();
+	var lastMove = move;
+	for (var i = 0; i < 100; i++) {
+		lastMove = parseFloat(slide.data("speed")) * lastMove;
+		move -= lastMove;
+	}
+	console.log(move);
+	window.scroll(0, move);
 }
 
 function init() {
 	var slides = $(".slide");
 	for (var i = 0; i < slides.length; i++) {
 		var offset = $(slides[i]).data("offset") ? parseFloat($(slides[i]).data("offset")) : 0;
-		
-		for (var j = 1; j <= i; j++) {
-			offset += ($(slides[j]).data("speed") - $(slides[j - 1]).data("speed")) * j;
-		}
 
 		$(slides[i]).offset({
 			top : (i + offset) * viewHeight
@@ -70,13 +69,6 @@ function moveUp() {
 		var fadeMinStart = parseInt(slide.data("fade-in-start"));
 		var fadeMinEnd = parseInt(slide.data("fade-in-end"));
 
-		// Scrolling
-		var amt = slide.position().top - ($(window).scrollTop() - currentScroll) * speed;
-
-		slide.offset({
-			top : amt
-		});
-
 		// Fading out
 		var slideBottom = slide.position().top + viewHeight;
 		var fadeSpeedMax = (transparencyMax / Math.max(-(fadeMaxStart - fadeMaxEnd), 0.1));
@@ -93,6 +85,4 @@ function moveUp() {
 
 		slide.css("opacity", opacity);
 	}
-
-	currentScroll = $(window).scrollTop();
 }
