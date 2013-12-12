@@ -58,6 +58,22 @@ body {
     background-image: url('../img/pixel.png');
 }
 
+#slide12 {
+    background-image: url('../img/sprinkles.png');
+}
+
+#slide13 {
+    background-image: url('../img/paper.png');
+}
+
+#slide14 {
+    background-image: url('../img/rice.png');
+}
+
+#slide15 {
+    background-image: url('../img/fabric.png');
+}
+
 #picture {
     left: 200px;
     width: 100px;
@@ -152,6 +168,17 @@ p .popover {
     font-weight: bold;
 }
 
+.gray {
+    color: gray;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 14pt;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 .title {
     position: absolute;
     width: 1000px;
@@ -198,6 +225,9 @@ ul {
 }
 .right-7 {
     margin-right: 70%;
+}
+.right-6 {
+    margin-right: 60%;
 }
 .right-4 {
     margin-right: 40%;

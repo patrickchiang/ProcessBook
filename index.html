@@ -9,6 +9,9 @@
 	</head>
 	<body>
 		<div class="parallax slide" id="slide1">
+			<p class="point gray">
+				INFO 360 Autumn 2013
+			</p>
 			<img src="img/logo.png" alt="logo" class="logo">
 			<h2 class="subtitle" data-stellar-ratio="0.9">Process Book by Patrick Chiang</h2>
 		</div>
@@ -18,7 +21,7 @@
 				This process book documents the design thinking experience and prototyping steps that our team (Team E) took in creating <span class="purple">Welp</span>. It includes everything from abstract concepts like our train of thought and rationale to actual sketches and prototypes we made.
 			</p>
 			<p class="point top-6 left-1 right-1">
-				Our theme was to design something to help students survive college. We believe that <span class="purple">Welp</span> addresses that problem.
+				Hopefully, this will be an as concise, interesting, and interactive experience as I tried to design it to be.
 			</p>
 		</div>
 		<div class="parallax slide" id="slide3">
@@ -85,13 +88,13 @@
 
 		</div>
 		<div class="parallax slide" id="slide5">
-			<h2 class="title">Brainstorming</h2>
+			<h2 class="title"  data-stellar-ratio="1.3">Brainstorming</h2>
 			<img src="attach/40Q1.jpg" alt="40 Questions slide 2" class="image">
 			<img src="attach/40Q2.jpg" alt="40 Questions slide 2" class="image left-5">
 			<p class="point top-2 left-1 right-1" data-stellar-ratio="1.3">
 				As we got a better idea of what the problem was all about, we entered the brainstorming phase of the project. At this point, we went for quantity over quality, churning out as many ideas as possible, even ones we weren't sure were possible to engineer.
 			</p>
-			<p class="point top-6 left-1 right-1" data-stellar-ratio="1.2">
+			<p class="point top-6 left-1 right-1" data-stellar-ratio="1.3">
 				<a href="attach/ideas50.jpg" rel="popover" data-img="attach/ideas50.jpg">50 Ideas Blitzkrieg</a>
 				<br/>
 				<a href="attach/40Q1.jpg" rel="popover" data-img="attach/40Q1.jpg">40 Ideas Part 1</a>
@@ -128,7 +131,7 @@
 			</p>
 			<a href="attach/p11.jpg"><img src="attach/p11.jpg" alt="prototype 1" class="point top-5 smaller-img" /></a>
 			<a href="attach/p2.jpg"><img src="attach/p2.jpg" alt="prototype 2" class="point top-5 left-4 smaller-img" /></a>
-			<a href="attach/p3.jpg"><img src="attach/p3.jpg" alt="prototype 3" class="point top-5 left-7 smaller-img" /></a>
+			<a href="attach/p3.jpg"><img src="attach/p3.jpg" alt="prototype 3" class="point top-5 left-6 smaller-img" /></a>
 		</div>
 		<div class="parallax slide" id="slide9">
 			<h2 class="title">Prototype Testing</h2>
@@ -144,13 +147,96 @@
 				At the time we were facing a difficult conundrum. I knew it would be impossible for "the engineer" (me) to make a working prototype if our product was of a mobile app. A working prototype was important to me because I thought actually allowing users to have hands on a product would give us much better feedback on how to improve our design. On the other hand, a lot of our peers we interviewed thought that a mobile app would be better than just a website.
 			</p>
 			<p class="point top-7 left-1 right-1">
-				I made it a webapp... one that is friendly to mobile devices.
+				We made a webapp... one that is friendly to mobile devices, so friendly that it might as well be a generic mobile app. <span class="purple">Welp</span> was born.
 			</p>
 		</div>
-		<div class="parallax slide" id="slide11"></div>
-		<div class="parallax slide" id="slide12"></div>
-		<div class="parallax slide" id="slide13"></div>
-		<div class="parallax slide" id="slide14"></div>
+		<div class="parallax slide" id="slide11">
+			<img src="attach/site1.png" alt="site page 1" class="point top-1 left-1" />
+			<p class="point top-1 left-5 right-1 small" data-stellar-ratio="1.1">
+				Simple Google-like search bar, with autocomplete and advanced settings.
+			</p>
+			<img src="attach/site2.png" alt="site page 2" class="point top-4 left-tiny" />
+			<p class="point top-3 left-tiny right-6 small" data-stellar-ratio="1.1">
+				Display list of matching restaurants with multiple sorting options.
+			</p>
+			<img src="attach/site3.png" alt="site page 3" class="point top-3 left-5" />
+			<p class="point top-7 left-2 right-5 small" data-stellar-ratio="1.1">
+				Detailed information about each restaurant, such as pictures, maps, and reviews.
+			</p>
+		</div>
+		<div class="parallax slide" id="slide12">
+			<h2 class="title">Heuristic Evaluations</h2>
+			<p class="point top-2 left-1 right-4">
+				Soon after a functional prototype of <span class="purple">Welp</span> was rolled out, we did a heuristic evaluation from 10 different perspectives and found multiple violations within each. Some of them (ex: the non-functional back button) were not easy fixes and required redoing the entire structure of the site.
+			</p>
+			<p class="point top-8 left-1 right-4">
+				<a href="attach/eval.pdf">Full heuristic evaluation report</a>
+			</p>
+
+			<ul class="point small top-2 left-7 right-1">
+				10 Perspectives:
+				<li data-toggle="tooltip" title="When searching, no indication that the search is going on was shown.">
+					Visibility of System Status
+				</li>
+				<li data-toggle="tooltip" title="The W button had no real world match, and its purpose was completely unknown to anyone who didn't design it.">
+					Real World Match
+				</li>
+				<li data-toggle="tooltip" title="There was no way to go back a page and the browser back button does not work.">
+					User Control and Freedom
+				</li>
+				<li data-toggle="tooltip" title="Reviews had no empty stars to denote max score, even though it appeared everywhere else.">
+					Consistency and Standards
+				</li>
+				<li data-toggle="tooltip" title="The See More Reviews button still appeared even when there are no more reviews.">
+					Error Prevention
+				</li>
+				<li data-toggle="tooltip" title="Search terms were strict. Misspelling a word would end up giving no results.">
+					Recognition vs. Recall
+				</li>
+				<li data-toggle="tooltip" title="It was not easy to add more photos onto the restaurants' details page.">
+					Flexibility and Efficiency
+				</li>
+				<li data-toggle="tooltip" title="The numbers on the left of the name of the restaurant on the search results page were at best unnecessary and at worst confusing.">
+					Minimalistic Design
+				</li>
+				<li data-toggle="tooltip" title="When a user went to an empty page, an unintuitive default resource not found page was displayed. ">
+					Diagnose and Recover
+				</li>
+				<li data-toggle="tooltip" title="It was not clear if the user can search for types of restaurants, specific dishes or the name of a place.">
+					Help and Documentation
+				</li>
+				<p class="clue">
+					(Hover over perspective for example of violation.)
+				</p>
+			</ul>
+
+		</div>
+		<div class="parallax slide" id="slide13">
+			<p class="point top-1 left-1 right-1">
+				I fixed most of these problems. Then, taking the advice of our instructor and TA, we sought outside advice and asked people to help us identify even more problems with the prototype. Plenty more were found <a href="attach/todo.pdf">and we made a list to keep track of them all.</a>
+			</p>
+			<a href="attach/nosleep.png"><img src="attach/nosleep.png" alt="prototype 1" class="point top-4 left-4 smaller-img" /></a>
+			<p class="point top-9 left-1 right-1">
+				That's okay I wasn't planning on sleeping anyway...
+			</p>
+		</div>
+		<div class="parallax slide" id="slide14">
+			<p class="point top-1 left-1 right-1">
+				Many design iterations and coffees later...
+			</p>
+			<p class="point top-2 left-1 right-1">
+				<img src="attach/final.gif" alt="final prototype"/>
+			</p>
+		</div>
+		<div class="parallax slide" id="slide15">
+			<h2 class="title">Conclusion</h2>
+			<p class="point top-2 left-1 right-1">
+				Over the last quarter, my team worked our hardest to come up with and refine a design that is novel, intuitive, and usable. From our original perspective, "someone should make something to do this", we have more or less switched over to thinking about design from a problem-first point of view. We faced challenges and even had times where things seemed impossible, but we eventually bulldozed through the finish line. Despite our success, it still feels like if we had known what we now know at the beginning of the quarter, we could have done more, better. Or maybe that's just an indication that we learned a lot.
+			</p>
+			<p class="point top-9 left-1 right-1">
+				If there's only one thing I can take away from this course: <span class="bold">design is hard.</span>
+			</p>
+		</div>
 
 		<!-- js scripts -->
 		<script src="js/jquery-2.0.3.min.js"></script>
