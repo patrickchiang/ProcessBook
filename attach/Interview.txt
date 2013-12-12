@@ -1,0 +1,31 @@
+Interviewees: Wesley Wolanski, Jessalyn Cheng
+
+Original Problem Statement: Many students at UW have difficulty deciding where to eat because there are many choices, but too many scattered sources of information. The current existing information is not tailored to student use, so it is difficult for us to filter relevant information.
+
+Prepared questions:
+
+What did you have for dinner? Why?
+
+(If relevant)When was the last time you ate on the Ave? Where?
+
+How often do you eat on the Ave in a month?
+
+How do you find recommendations on where to eat?
+
+How do you decide where to eat?
+
+What are your top three concerns when finding a place?
+
+Do you use mobile apps and/or websites to find where to eat? Are there any compliments/complaints you have about these services?
+
+If you had to choose between an app and a website, which would you choose?
+
+Interview with Wesley:
+
+In the half hour interview with Wesley, he revealed that he ate out roughly 3 to 4 times a week, and once or twice of those times were on the Ave. There were a couple of restaurants he favored, which he discovered via word of mouth. He also mentioned that he's used Yelp before, which he likes because of its ability to search. One suggestion he made on how Yelp could be improved was if the reviews were all from people from the UW, they would be more relevant to him. After I revealed what our original problem statement was, he mentioned that real time information about restaurants on the Ave is one feature that he would definitely use if such an app was created.
+
+Interview with Jessalyn:
+
+In my less formal interview with Jessalyn, we focused more on the features of Yelp and how she thought they could be improved. Initially, she said Yelp was useful in helping her find information on restaurants on the Ave, but soon began to list off some problems with Yelp and its information on restaurants on the Ave. For example, Yelp does not have information on some small hole-in-the-wall restaurants at the Ave, isn't updated often, and doesn't tell you if a restaurant is closed for renovation. She also came up with the idea (independently of my other interview) that a mobile app that shows real time information on restaurants of the Ave would be "super useful".
+
+Overall, these interviews made me realize we have an immediate issue with our original problem statement. The problem we stated was intended to mean lack of information on what restaurants were good to eat at. Over the interviews, I realized that people were more interested in real time and updated information about restaurants on the Ave than general research information (though the latter is appreciated as in the case of more relevant reviews). In conclusion, we should rethink our problem to accommodate this discovery.

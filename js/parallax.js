@@ -5,6 +5,10 @@ $(function() {
 
 	$(".slide").height(viewHeight).width(viewWidth);
 	init();
+	
+	$("li").tooltip({
+		placement: "bottom"
+	});
 
 	$.stellar();
 });

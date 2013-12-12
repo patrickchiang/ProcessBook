@@ -27,11 +27,11 @@ body {
 }
 
 #slide4 {
-    background-image: url('../img/snow.png');
+    background-image: url('../img/rice.png');
 }
 
 #slide5 {
-    background-image: url('../img/snow.png');
+    background-image: url('../img/notebook.png');
 }
 
 #slide6 {
@@ -106,42 +106,57 @@ h1 {
 
 .title {
     position: absolute;
-    width: 500px;
+    width: 1000px;
     height: 100px;
     top: 10%;
     left: 50%;
-    margin-left: -250px; /* margin is -0.5 * dimension */
+    margin-left: -500px; /* margin is -0.5 * dimension */
     margin-top: -50px;
     font-size: 2em;
     font-weight: bold;
     text-align: center;
 }
 
+.clue {
+    font-size: 10pt;
+    font-style: italic;
+}
+
 .small {
-    font-size: 18pt;
-    opacity: 0.8;
-    color: purple;
+    font-size: 16pt;
+    opacity: 0.5;
+    color: blue;
 }
 
 .medium {
     font-size: 22pt;
-    opacity: 0.8;
-    color: purple;
+    opacity: 0.5;
+    color: blue;
 }
 
 .large {
     font-size: 26pt;
-    opacity: 0.8;
-    color: purple;
+    opacity: 0.5;
+    color: blue;
+}
+
+ul {
+    list-style-type: circle;
 }
 
 .right-1 {
     margin-right: 10%;
 }
+.right-7 {
+    margin-right: 70%;
+}
 .right-5 {
     margin-right: 50%;
 }
 
+.left-tiny {
+    left: 5%;
+}
 .left-1 {
     left: 10%;
 }
