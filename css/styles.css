@@ -119,6 +119,20 @@ h1 {
 
 .small {
     font-size: 18pt;
+    opacity: 0.8;
+    color: purple;
+}
+
+.medium {
+    font-size: 22pt;
+    opacity: 0.8;
+    color: purple;
+}
+
+.large {
+    font-size: 26pt;
+    opacity: 0.8;
+    color: purple;
 }
 
 .right-1 {
