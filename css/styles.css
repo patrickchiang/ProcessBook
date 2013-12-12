@@ -23,9 +23,7 @@ body {
     padding: 10px;
 }
 
-.table a:link,
-.table a:visited,
-.table a:hover {
+.table a:link, .table a:visited, .table a:hover {
     display: inline-block;
     width: 300px;
     color: #333;
@@ -64,6 +62,7 @@ body {
 }
 
 #slide5 {
+    background-image: url('../img/snow.png');
     z-index: 2;
 }
 
