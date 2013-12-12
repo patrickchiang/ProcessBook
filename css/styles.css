@@ -46,22 +46,17 @@ body {
     background-image: url('../img/geometry.png');
 }
 
-#slide8 {
-    background-image: url('../img/geometry.png');
-}
-
 #slide9 {
-    background-image: url('../img/geometry.png');
+    background-image: url('../img/brushed.png');
 }
 
 #slide10 {
-    background-image: url('../img/geometry.png');
+    background-image: url('../img/sandpaper.png');
 }
 
 #slide11 {
-    background-image: url('../img/geometry.png');
+    background-image: url('../img/pixel.png');
 }
-
 
 #picture {
     left: 200px;
@@ -203,6 +198,9 @@ ul {
 }
 .right-7 {
     margin-right: 70%;
+}
+.right-4 {
+    margin-right: 40%;
 }
 .right-5 {
     margin-right: 50%;
