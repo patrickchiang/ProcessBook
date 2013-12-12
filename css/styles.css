@@ -39,12 +39,29 @@ body {
 }
 
 #slide7 {
-    background-image: url('../img/snow.png');
+    background-image: url('../img/notebook.png');
 }
 
 #slide8 {
-    background-image: url('../img/snow.png');
+    background-image: url('../img/geometry.png');
 }
+
+#slide8 {
+    background-image: url('../img/geometry.png');
+}
+
+#slide9 {
+    background-image: url('../img/geometry.png');
+}
+
+#slide10 {
+    background-image: url('../img/geometry.png');
+}
+
+#slide11 {
+    background-image: url('../img/geometry.png');
+}
+
 
 #picture {
     left: 200px;
@@ -94,6 +111,16 @@ h1 {
     left: 55%;
 }
 
+.small-img {
+    height: 60%;
+    width: auto;
+}
+
+.smaller-img {
+    height: 40%;
+    width: auto;
+}
+
 .image {
     position: absolute;
     height: auto;
@@ -102,16 +129,16 @@ h1 {
     z-index: -1;
 }
 
-.popover {
+p .popover {
     max-width: 500px;
     width: 500px;
     z-index: 5;
     position: absolute;
-    top: -200px !important;
-    left: 300px !important;
+    top: -200px;
+    left: 300px;
 }
 
-.arrow{
+.arrow {
     display: none !important;
 }
 
