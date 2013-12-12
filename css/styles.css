@@ -6,7 +6,6 @@ body {
 
 .slide, .object {
     font-size: 2em;
-    position: absolute;
     z-index: 1;
 }
 
@@ -91,7 +90,6 @@ h1 {
 
 .problems {
     position: absolute;
-    height: 140px;
     top: 50%;
     left: 55%;
 }
@@ -123,9 +121,15 @@ h1 {
     font-size: 18pt;
 }
 
+.right-1 {
+    margin-right: 10%;
+}
+.right-5 {
+    margin-right: 50%;
+}
+
 .left-1 {
     left: 10%;
-    margin-right: 10%;
 }
 .left-2 {
     left: 20%;
