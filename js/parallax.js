@@ -30,7 +30,17 @@ $(function() {
 		}
 	});
 
+	$(".table a").click(function() {
+		scrollToAnchor($(this).attr("href").split("#")[1]);
+	});
 });
+
+function scrollToAnchor(anchor) {
+	var aTag = $("div[id='" + anchor + "']");
+	$('html,body').animate({
+		scrollTop : aTag.offset().top
+	}, 'slow');
+}
 
 function init() {
 	var slides = $(".slide");
