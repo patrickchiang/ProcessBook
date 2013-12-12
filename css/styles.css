@@ -31,7 +31,7 @@ body {
 }
 
 #slide5 {
-    background-image: url('../img/notebook.png');
+    z-index: 2;
 }
 
 #slide6 {
@@ -94,6 +94,32 @@ h1 {
     left: 55%;
 }
 
+.image {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.popover {
+    max-width: 500px;
+    width: 500px;
+    z-index: 5;
+    position: absolute;
+    top: -200px !important;
+    left: 300px !important;
+}
+
+.arrow{
+    display: none !important;
+}
+
+.popover-img {
+    width: 100%;
+    z-index: 4;
+}
+
 .point {
     position: absolute;
     line-height: 2em;
@@ -115,6 +141,7 @@ h1 {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
+    z-index: 5;
 }
 
 .clue {

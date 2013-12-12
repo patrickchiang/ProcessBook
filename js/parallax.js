@@ -5,12 +5,22 @@ $(function() {
 
 	$(".slide").height(viewHeight).width(viewWidth);
 	init();
-	
+
 	$("li").tooltip({
-		placement: "bottom"
+		placement : "bottom"
 	});
 
 	$.stellar();
+
+	$('a[rel=popover]').popover({
+		html : true,
+		trigger : 'hover',
+		placement : 'right',
+		content : function() {
+			return '<img src="' + $(this).data('img') + '" class="popover-img" alt="img" />';
+		}
+	});
+
 });
 
 function init() {
